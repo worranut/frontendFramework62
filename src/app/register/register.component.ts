@@ -64,6 +64,8 @@ export class RegisterComponent implements OnInit {
 
               this.router.navigate(["/home"]);
             } else {
+              console.log(data);
+
               Swal.fire({
                 type: 'error',
                 title: 'แจ้งเตือน',
