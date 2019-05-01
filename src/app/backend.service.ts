@@ -3,6 +3,7 @@ import { Observable } from "rxjs";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { tap } from "rxjs/operators";
 
+// const authServiceUrl = "https://backend-framework62far.herokuapp.com/";
 const authServiceUrl = "http://localhost:3000/";
 
 const httpOptions = {
@@ -15,7 +16,7 @@ const httpOptions = {
   providedIn: "root"
 })
 export class BackendService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   register(
     rank: string,
